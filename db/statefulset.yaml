@@ -11,16 +11,16 @@ spec:
     spec:
       containers:
         - name: container-mysql
-          image: mysql:5.5
+          image: mysql:5.7.24
           ports:
             - containerPort: 3306
           env:
             - name: MYSQL_DATABASE
-              value: "loja"
+              value: "rentacar"
             - name: MYSQL_USER
               value: "root"
-            - name: MYSQL_ALLOW_EMPTY_PASSWORD
-              value: "1"
+            - name: MYSQL_ROOT_PASSWORD
+              value: "123456"
           volumeMounts:
             - name: volume-mysql
               mountPath: /var/lib/mysql
