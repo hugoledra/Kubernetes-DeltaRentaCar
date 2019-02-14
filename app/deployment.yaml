@@ -10,6 +10,6 @@ spec:
     spec:
       containers:
         - name: container-aplicacao
-          image: hugo.ledra/deltarentacar:latest
+          image: hugoledra/deltarentacar:latest
           ports:
             - containerPort: 80
